@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+    <h1>Form</h1>
+    <form action="/submit" method="post">
+        <!-- Text input -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+        
+        <!-- Email input -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+        
+        <!-- Password input -->
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+        
+        <!-- Checkbox -->
+        <label for="subscribe">
+            <input type="checkbox" id="subscribe" name="subscribe">
+            Subscribe to newsletter
+        </label>
+        <br><br>
+        
+        <!-- Radio buttons -->
+        <fieldset>
+            <legend>Gender:</legend>
+            <label for="male">
+                <input type="radio" id="male" name="gender" value="male" required>
+                Male
+            </label>
+            <br>
+            <label for="female">
+                <input type="radio" id="female" name="gender" value="female" required>
+                Female
+            </label>
+            <br>
+            <label for="other">
+                <input type="radio" id="other" name="gender" value="other" required>
+                Other
+            </label>
+        </fieldset>
+        <br>
+        
+        <!-- File input -->
+        <label for="file">Upload a file:</label>
+        <input type="file" id="file" name="file">
+        <br><br>
+        
+        <!-- Select menu -->
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="usa">India</option>
+            <option value="canada">Canada</option>
+            <option value="uk">United Kingdom</option>
+            <option value="australia">Australia</option>
+        </select>
+        <br><br>
+        
+        <!-- Submit button -->
+        <button type="submit">Submit</button>
+        
+        <!-- Reset button -->
+        <button type="reset">Reset</button>
+    </form>
+</body>
+</html>
